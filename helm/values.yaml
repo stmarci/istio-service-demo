@@ -1,13 +1,14 @@
 replicaCount: 1
 
 image:
-  repository: localhost:5000/kubernetes-client
+  repository: localhost:5000/istio-service-demo
   tag: latest
   pullPolicy: IfNotPresent
 
 serviceAccount:
   create: true
-  name: kubernetes-example
+  name: isio-service-demo
+
 rbac:
   create: true
 
